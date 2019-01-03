@@ -20,6 +20,9 @@ The docker image should contain the requirement packages to send Discord VoIP me
 ## Docker compose
 The provided docker compose file will bring up the freshly built image;
 `docker-compose up -d`
+
+Use `docker-compose ps` to confirm the image is running.
+
 The above command will run in daemon mode, to stop the running containers use;
 `docker-compose down`
 
