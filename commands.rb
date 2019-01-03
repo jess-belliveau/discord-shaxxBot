@@ -3,12 +3,9 @@ class Commands
   def hello(bot)
     bot.command :hello do |event|
       sayings = ['Salutations!',
-                 "What's up, buttercup?",
-                 'Ready to work',
-                 'Hello? This is One. You want two.',
-                 'https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif',
-                 "Yo #{event.user.name}! You left your ID at the bar last night. I got your back though...",
-                 'Zug zug!']
+                 'I await the fight!',
+                 'Welcome to the battle friend.',
+                 'Tonight.... we dine in hell!']
 
       event << sayings.sample
     end
@@ -37,15 +34,20 @@ class Commands
 
         voice_bot.destroy
 
-        event << "Shaxx speaks!"
+        sayings = ['I have spoken!',
+            "Take head of my words!",
+            "Are you worthy to hear my voice?",
+            "Do you fear my angelic voice?"]
+
+        event << sayings.sample
     end
   end
 
   def bye(bot)
     bot.command :bye_now do |event|
-      sayings = ['See you later, alligator',
-                 ':wave:',
-                 'Bye!']
+      sayings = ["I depart the field of battle.",
+                 "I grow tired of your musings.",
+                 "You do not impress me."]
 
       event << sayings.sample
     end
