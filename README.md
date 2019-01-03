@@ -5,6 +5,7 @@ A regal Discord bot that represents Lord Shaxx from Destiny - he provides inspir
 
 ## Requirements
 Copy .env.sample to .env and populate with your Discord bot token. `BOT_NAME` becomes the prefix you use to call forth Lord Shaxx.
+To create a token; Discord Token - [link](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
 Invite the bot to your channel after creating your app.
 
 Clone this git repo.
