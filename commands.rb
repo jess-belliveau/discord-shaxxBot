@@ -43,6 +43,31 @@ class Commands
     end
   end
 
+  def yes(bot)
+    bot.command :no? do |event|
+        # The  `voice_channel` method returns the voice channel the user is currently in, or `nil` if the user is not in a
+        # voice channel.
+        channel = event.user.voice_channel
+
+        # Here we return from the command unless the channel is not nil (i. e. the user is in a voice channel). The `next`
+        # construct can be used to exit a command prematurely, and even send a message while we're at it.
+        next "You're not in any voice channel!" unless channel
+
+        # The `voice_connect` method does everything necessary for the bot to connect to a voice channel. Afterwards the bot
+        # will be connected and ready to play stuff back.
+        bot.voice_connect(channel)
+        "Connected to voice channel: #{channel.name}"
+        voice_bot = event.voice
+
+        # Play a random audio file
+        voice_bot.play_file('audio/Yassssss.mp3')
+
+        voice_bot.destroy
+
+        event << "Yesssssssssssss!"
+    end
+  end
+
   def bye(bot)
     bot.command :bye_now do |event|
       sayings = ["I depart the field of battle.",
