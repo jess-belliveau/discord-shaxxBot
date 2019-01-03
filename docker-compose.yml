@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  bot:
+    build: .
+    image: shaxxbot:latest
+    env_file:
+      - ./.env 
+    command: ruby shaxxBot.rb
+    volumes:
+      - .:/bot
