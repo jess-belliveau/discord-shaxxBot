@@ -1,16 +1,38 @@
 # discord-shaxxBot
-A Shaxx Discord VoIP bot
+Lord Shaxx Discord VoIP bot
 
-A basic Discord bot the represents Lord Shaxx from Destiny - it provides inspirational VoIP messages on demand!
-
-The bot runs inside a docker container.
+A regal Discord bot that represents Lord Shaxx from Destiny - he provides inspirational VoIP messages on demand!
 
 ## Requirements
-Copy .env.sample to .env and populate with your Discord bot token. `BOT_NAME` becomes the prefix you use to call the bot.
-Invite the bot to your channel
+Copy .env.sample to .env and populate with your Discord bot token. `BOT_NAME` becomes the prefix you use to call forth Lord Shaxx.
+Invite the bot to your channel after creating your app.
+
+Clone this git repo.
+
+Use Lord_Shaxx.png as your Bot's avatar during setup!
 
 ## Building the docker image
+To build the docker image locally;
+`docker build -t shaxxbot .`
+
+The docker image should contain the requirement packages to send Discord VoIP messages.
 
 ## Docker compose
+The provided docker compose file will bring up the freshly built image;
+`docker-compose up -d`
+The above command will run in daemon mode, to stop the running containers use;
+`docker-compose down`
 
 ## Troubleshooting
+For ongoing work, you can build an image and then attach via;
+`docker run -i -t shaxxbot:latest /bin/bash`
+You will need to export the two variables in .env;
+```
+export DISCORD_TOKEN=SECRET_TOKNE
+export BOT_NAME=shaxxBot
+```
+Then directly run the ruby script;
+`ruby shaxxBot.rb`
+
+Errors will be thrown to the console/running process.
+
