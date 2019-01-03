@@ -6,7 +6,6 @@ class Commands
                  "What's up, buttercup?",
                  'Ready to work',
                  'Hello? This is One. You want two.',
-                 'Dilly dilly!',
                  'https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif',
                  "Yo #{event.user.name}! You left your ID at the bar last night. I got your back though...",
                  'Zug zug!']
@@ -35,6 +34,10 @@ class Commands
         audio_files = Dir["audio/*"]
         # Play a random audio file
         voice_bot.play_file(audio_files.sample)
+
+        voice_bot.destroy
+
+        event << "Shaxx speaks!"
     end
   end
 
