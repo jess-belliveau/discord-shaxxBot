@@ -8,8 +8,8 @@ discord_command = ENV['BOT_NAME'] + ' '
 $sayings = {  
   "positive" =>
     ["I have spoken!",
-      "Do you fear my angelic voice?"],
-      "You're my favourite Guardian!",
+      "Do you fear my angelic voice?",
+      "You're my favourite Guardian!"],
   "negative" =>
     ["Take heed of my words!",
       "You are barely worthy to hear my voice!"]
