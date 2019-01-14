@@ -11,12 +11,7 @@ class Commands
         # Play a random audio file
         voip_message(bot, event, channel, audio_files.sample)
 
-        sayings = ['I have spoken!',
-            "Take head of my words!",
-            "Are you worthy to hear my voice?",
-            "Do you fear my angelic voice?"]
-
-        event << sayings.sample
+        event << $sayings[$sayings.keys.sample].sample
     end
   end
 
