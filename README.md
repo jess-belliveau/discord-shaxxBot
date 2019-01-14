@@ -34,7 +34,7 @@ For ongoing work, you can build an image and then attach via;
 `docker run -i -t shaxxbot:latest /bin/bash`
 You will need to export the two variables in .env;
 ```
-export DISCORD_TOKEN=SECRET_TOKNE
+export DISCORD_TOKEN=SECRET_TOKEN
 export BOT_NAME=shaxxBot
 ```
 Then directly run the ruby script;
