@@ -65,7 +65,9 @@ class Commands
       commands_list = ''
 
       commands = { 'thoughts?' => 'random message in VoIP',
-                   'help' => 'shows the list of available commands' }
+                  'positive?' => 'Lord Shaxx is pleased with you',
+                  'negative?' => 'Lord Shaxx is disappointed',
+                  'help' => 'shows the list of available commands' }
 
       commands.each do |k, v|
         commands_list += "**#{k}** - #{v}\n"
