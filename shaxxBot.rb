@@ -7,12 +7,14 @@ discord_command = ENV['BOT_NAME'] + ' '
 # attempting to abstact the text sayings
 $sayings = {  
   "positive" =>
-    ["I have spoken!",
-      "Do you fear my angelic voice?",
+    ["You're crushing them!",
+      "Oh, did they ever stand a chance.",
+      "I know total domination when I see it! Superb!",
       "You're my favourite Guardian!"],
   "negative" =>
-    ["Take heed of my words!",
-      "You are barely worthy to hear my voice!"]
+    ["Let this defeat be a lesson: only the strong survive.",
+    "Worry not, Guardian! Now, fight again!",
+    "Let the sting from this defeat fuel your fire."]
 }
 
 # Setup a command bot and appropriate prefix
