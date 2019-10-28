@@ -1,4 +1,5 @@
 ![Lord Shaxx][shaxx]
+Img Credit: https://www.deviantart.com/fonteart/art/Lord-Shaxx-567679611
 
 [shaxx]: https://raw.githubusercontent.com/SinFulNard/discord-shaxxBot/images_for_shaxx/lord_shaxx_by_fonteart.png
 
