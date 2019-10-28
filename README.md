@@ -1,4 +1,6 @@
-[[https://SinFulNard/discord-shaxxBot/repository/blob/master/lord_shaxx_by_fonteart.png|alt=Shaxx]]
+![Lord Shaxx][shaxx]
+
+[shaxx]: https://raw.githubusercontent.com/SinFulNard/discord-shaxxBot/images_for_shaxx/lord_shaxx_by_fonteart.png
 
 # discord-shaxxBot
 Lord Shaxx Discord VoIP bot
